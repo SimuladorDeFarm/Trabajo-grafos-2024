@@ -16,8 +16,8 @@ def cantidad_convinaciones(rutas, convinaciones):
     
     while i < n_filas:
         n_columnas = len(rutas[i])
-        j = 0
-        while j < n_columnas:
+        j = 1
+        while j < n_columnas-1:
             x = 0
             
 
