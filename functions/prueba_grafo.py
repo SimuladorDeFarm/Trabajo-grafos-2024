@@ -15,15 +15,12 @@ def mostrar(G):
 
 def prueba_grafo():
 
-
+    #crea un grafo vacio
     G = nx.Graph()
 
-    #agregar uno a la vez y si no existe los crea
-    #G.add_edge(1, 2)
-    #e = (1,2)
-    #G.add_edge(*e)  # unpack edge tuple
 
-    #agregar por conjunto
+
+    #agregar por conjunto y su respectivo peso
     G.add_edges_from([(1,2, {'weight': 2}),
     (1,8, {'weight': 5}),
     (2,3, {'weight': 3}),
@@ -37,4 +34,11 @@ def prueba_grafo():
     (7,8, {'weight': 4}),
     (8,9, {'weight': 4})])
 
+    ''' este es el grafo de prueba
+    1----2----3
+    |    |    |
+    8----9----4
+    |    |    |
+    7----6----5
+    '''
     return G

@@ -3,21 +3,22 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 
-# Cargar los datos desde el archivo CSV
-data = pd.read_csv('./metro_santiago.csv')
+def grafo_metro():
+    # Cargar los datos desde el archivo CSV
+    data = pd.read_csv('./functions/metro_santiago.csv')
 
-# Crear un grafo vacío
-G = nx.Graph()
+    # Crear un grafo vacío
+    G = nx.Graph()
 
-# Añadir las conexiones entre estaciones con su respectivo tiempo
-for index, row in data.iterrows():
-    G.add_edge(row['origen'], row['destino'], weight=row['tiempo'])
+    # Añadir las conexiones entre estaciones con su respectivo tiempo
+    for index, row in data.iterrows():
+        G.add_edge(row['origen'], row['destino'], weight=row['tiempo'])
 
-#Verificar las estaciones y sus conexiones
-print("Estaciones:", G.nodes())
-print("Conexiones:", G.edges(data=True))
+    #Verificar las estaciones y sus conexiones
+    #print("Estaciones:", G.nodes())
+    #print("Conexiones:", G.edges(data=True))
 
-
+    return G
 
 
 
