@@ -18,10 +18,6 @@ print("Estaciones:", G.nodes())
 print("Conexiones:", G.edges(data=True))
 
 
-nx.draw(G, with_labels=True, node_size=500, font_weight='bold')
-
-# Mostrar el grafo
-plt.show()
 
 
 
