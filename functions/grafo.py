@@ -1,5 +1,7 @@
 import pandas as pd
 import networkx as nx
+import matplotlib.pyplot as plt
+
 
 # Cargar los datos desde el archivo CSV
 data = pd.read_csv('./metro_santiago.csv')
@@ -16,7 +18,10 @@ print("Estaciones:", G.nodes())
 print("Conexiones:", G.edges(data=True))
 
 
+nx.draw(G, with_labels=True, node_size=500, font_weight='bold')
 
+# Mostrar el grafo
+plt.show()
 
 
 
