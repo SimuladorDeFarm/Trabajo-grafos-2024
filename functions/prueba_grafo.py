@@ -12,42 +12,9 @@ def mostrar(G):
     # Mostrar el grafo
     plt.show()
 
-def vertices():
-    A = nx.Graph()
-    B = nx.Graph()
-    C = nx.Graph()
-    #agregar un nodo
-    A.add_node(1 )
 
-    #agregar varios nodos
-    B.add_nodes_from([2, 3])
+def prueba_grafo():
 
-
-    #agregar nodos con atributos
-    C.add_nodes_from([(4, {"color": "red"}), (5, {"color": "green"}), (6, {"color": "yelow"})])
-
-    #convinar nodos
-    D = nx.path_graph(10)
-    A.add_nodes_from(D) 
-    A.add_node(D)
-
-
-    #imprimir datos simplificado
-    print(C)
-
-
-    #imprimir los datos
-    #print(C.nodes(data=True))
-    #nx.draw(C)
-    #G = nx.petersen_graph()
-    # Dibujar el grafo
-    nx.draw(B, with_labels=True, node_size=800, font_weight='bold')
-
-    # Mostrar el grafo
-    plt.show()
-
-
-def edges():
 
     G = nx.Graph()
 
@@ -70,14 +37,4 @@ def edges():
     (7,8, {'weight': 4}),
     (8,9, {'weight': 4})])
 
-    #eliminar contenido del nodo
-    #G.clear()
-
-    print(G.number_of_nodes())
-    print(G.number_of_edges())
-
-    mostrar(G)
-
-edges()
-
-
+    return G
