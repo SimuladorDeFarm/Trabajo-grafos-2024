@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def grafo_metro():
     # Cargar los datos desde el archivo CSV
-    data = pd.read_csv('./functions/metro_santiago.csv')
+    data = pd.read_csv('./functions/base_datos/metro_santiago.csv')
 
     # Crear un grafo vacío
     G = nx.Graph()

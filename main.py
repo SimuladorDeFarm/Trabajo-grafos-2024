@@ -1,34 +1,29 @@
 #grafo de prueba
-from functions.prueba_grafo             import prueba_grafo
+from functions.pruebas.prueba_grafo                     import prueba_grafo
 #muestra los resultados
-from functions.prueba_grafo             import mostrar
+from functions.pruebas.prueba_grafo                     import mostrar
 #ruta mas corta
-from functions.dijkstra                 import ruta_mas_corta
+from functions.algoritmos.dijkstra                      import dijkstra
 #graficar
-from functions.visual.graficar_grafo    import graficar_grafos
+from functions.frontend.graficar_grafo                  import graficar_grafos
 #grafo del metro
-from functions.grafo                    import grafo_metro
-#busqueda en profundidad
-from functions.ruta_menos_convinaciones import Busqueda_profundidad
-#cantidad de convinaciones
-from functions.cantidad_convinaciones   import cantidad_convinaciones
-#convinaciones
-from functions.convinaciones            import convinaciones
+from functions.base_datos.grafo                         import grafo_metro
+#busqueda en profundidad    
+from functions.algoritmos.busqueda_profundidad          import Busqueda_profundidad
+#cantidad de convinaciones en una ruta(idea no valida)
+from functions.funcionalidades.cantidad_convinaciones   import cantidad_convinaciones
+#convinaciones (array con que estaciones son convinaciones)
+from functions.base_datos.convinaciones                 import convinaciones
 
+
+
+#crea el grafo g con todas las lienas de metro y sus pesos
 G = grafo_metro()
 
-inicio = "plaza de puente alto"
+#indica un inicio y destino (despues esto debe ser cambiado al archivo inicio_destino)
+origen = "plaza de puente alto"
 destino = "tobalaba"
 
-
-print(len(Busqueda_profundidad(G, inicio, destino)))
-rutas_posibles = Busqueda_profundidad(G,  inicio, destino)
-
-
-v =  convinaciones()
-
-print(cantidad_convinaciones(rutas_posibles, v))
-
-
-
+#ruta mas corta entre origen y destino
+print("La ruta mas corta es:",dijkstra(G, origen, destino))
 
