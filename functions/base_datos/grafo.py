@@ -12,7 +12,7 @@ def grafo_metro():
 
     # Añadir las conexiones entre estaciones con su respectivo tiempo
     for index, row in data.iterrows():
-        G.add_edge(row['origen'], row['destino'], weight=row['tiempo'])
+        G.add_edge(row['origen'], row['destino'], weight=row['tiempo'], linea=row['linea'])
 
     #Verificar las estaciones y sus conexiones
     #print("Estaciones:", G.nodes())
