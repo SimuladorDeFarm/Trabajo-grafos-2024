@@ -1,6 +1,6 @@
 import networkx as nx
 
-def ruta_mas_corta(G, origen, destino):
+def dijkstra(G, origen, destino):
 
 
     # Calcular la ruta más corta entre dos estaciones usando Dijkstra
