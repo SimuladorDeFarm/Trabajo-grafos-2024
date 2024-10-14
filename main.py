@@ -1,7 +1,7 @@
 #grafo de prueba
-from functions.pruebas.prueba_grafo                     import prueba_grafo
+#from functions.pruebas.prueba_grafo                     import prueba_grafo
 #muestra los resultados
-from functions.pruebas.prueba_grafo                     import mostrar
+#from functions.pruebas.prueba_grafo                     import mostrar
 #ruta mas corta
 from functions.algoritmos.dijkstra                      import dijkstra
 #graficar
@@ -20,11 +20,11 @@ from functions.base_datos.combinaciones                 import combinaciones
 #crea el grafo g con todas las lienas de metro y sus pesos
 G = grafo_metro()
 
-print(variable)
+
 #indica un inicio y destino (despues esto debe ser cambiado al archivo inicio_destino)
 origen = "plaza de puente alto"
 destino = "tobalaba"
 
 #ruta mas corta entre origen y destino
 #print("La ruta mas corta es:",dijkstra(G, origen, destino))
-
+graficar_grafos(G, False)
