@@ -1,5 +1,5 @@
 
-def convinaciones():
+def combinaciones():
 
     v  = ["san pablo",
     "santa ana",

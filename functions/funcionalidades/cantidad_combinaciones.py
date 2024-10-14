@@ -1,5 +1,5 @@
 
-def cantidad_convinaciones(rutas, convinaciones):
+def cantidad_combinaciones(rutas, convinaciones):
 
     n_filas = len(rutas)
     n_columnas = len(rutas[0])

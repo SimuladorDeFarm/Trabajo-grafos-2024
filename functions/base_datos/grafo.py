@@ -26,33 +26,6 @@ def grafo_metro():
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 """""
 #Interaccion con usuario 
 origen = str(input("Estacion origen: "))
