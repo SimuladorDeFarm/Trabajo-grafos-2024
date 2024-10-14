@@ -1,7 +1,9 @@
 import networkx as nx
-from grafo import G
 
+#from grafo import G
+from functions.base_datos.grafo import grafo_metro
 
+G = grafo_metro()
 #Interaccion con usuario 
 origen = str(input("Estacion origen: "))
 destino = str(input("Estacion destino: "))
