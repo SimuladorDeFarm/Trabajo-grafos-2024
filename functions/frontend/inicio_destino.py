@@ -7,6 +7,12 @@ from functions.frontend.validaciones                    import validar_estacion
 from functions.frontend.validaciones                    import imprimir_filas                
 
 
+def convertir_true_or_false(string):
+
+    if string == "si":
+        return True
+    else:
+        return False
 
 
 def input_usuario():
@@ -16,12 +22,16 @@ def input_usuario():
     
     #imprimir_filas(lista_estaciones)
 
-    origen = "catolica"
-    destino = "jose"
     programar_hora = True
     #obtiene la hora en formato datatime.time
     hora_string = "00:00"
     
+    
+    programar_string = input("Desea programar hora?[si/no]: ")
+    
+    programar_hora = convertir_true_or_false(programar_string)
+
+
 
     #en el caso de que la persna quiera programar salida
     if(programar_hora == True):
@@ -31,15 +41,16 @@ def input_usuario():
         while valido:
             #hora_string = "15:534"
             hora_string = input("Programar Hora:")
-            estacion = input("ingrese estacion: ")
+            origen = input("ingrese origen: ")
+            destino = input("ingrese destino: ")
             
             
-            if(validar_hora(hora_string) and validar_estacion(estacion, lista)):
+            if(validar_hora(hora_string) and validar_estacion(origen, lista) and validar_estacion(destino, lista)):
                 valido = False
-                print("Hora ingresada o estacion SI es valida")
+                print("Hora ingresada o estaciones SI es valida")
             else:
                 valido = True
-                print("Hora ingresada o estacion NO es valida")
+                print("Hora ingresada o estaciones NO es valida")
         
         #convierte la hora de string a time objet
         hora = datetime.strptime(hora_string, '%H:%M').time()
@@ -47,7 +58,11 @@ def input_usuario():
     #en el caso de que la persona no quiera programar salida
     else:
         #recorje la hora actual del sistema
-        hora = hora_actual()
+        origen = input("ingrese origen: ")
+        destino = input("ingrese destino: ")
+        hora = datetime.now().time()
+    
+    return origen, destino, hora
 
 #    print(G)
 #    return origen, destino, hora

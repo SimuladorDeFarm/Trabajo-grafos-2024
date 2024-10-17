@@ -1,3 +1,5 @@
+from datetime import datetime
+
 
 def validar_hora(hora_str):
 
