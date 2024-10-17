@@ -1,138 +1,137 @@
-origen,destino,tiempo
-tobalaba,cristobal colon,2
-cristobal colon,francisco bilbao,2
-francisco bilbao,principe de gales,3
-principe de gales,simon bolivar,2
-simon bolivar,plaza egaña,2
-plaza egaña,los orientales,2
-los orientales,grecia,2
-grecia,los presidentes,2
-los presidentes,quilin,2
-quilin,las torres,2
-las torres,macul,2
-macul,vicuña mackenna,3
-vicuña mackenna,vicente valdes,2
-vicente valdes,rojas magallanes,2
-rojas magallanes,trinidad,2
-trinidad,san jose de la estrella,2
-san jose de la estrella,los quillayes,2
-los quillayes,elisa correa,2
-elisa correa,hospital sotero del rio,2
-hospital sotero del rio,protectora de la infancia,2
-protectora de la infancia,las mercedes,2
-las mercedes,plaza de puente alto,2
-vicuña mackenna,santa julia,3
-santa julia,la granja,2
-la granja,santa rosa,4
-santa rosa,san ramon,2
-san ramon,la cisterna,5
-plaza de maipu,santiago bueras,2
-santiago bueras,del sol,2
-del sol,monte tabor,2
-monte tabor,las parcelas,2
-las parcelas,laguna sur,3
-laguna sur,barrancas,2
-barrancas,pudahuel,2
-pudahuel,san pablo,3
-san pablo,lo prado,2
-lo prado,blanqueado,2
-blanqueado,gruta de lourdes,2
-gruta de lourdes,quinta normal,2
-quinta normal,cumming,2
-cumming,santa ana,2
-santa ana,plaza de armas,2
-plaza de armas,bellas artes,2
-bellas artes,baquedano,3
-baquedano,parque bustamante,2
-parque bustamante,santa isabel,2
-santa isabel,irarrazabal,2
-irarrazabal,ñuble,3
-ñuble,rodrigo de araya,2
-rodrigo de araya,carlos valdovinos,2
-carlos valdovinos,camino agricola,2
-camino agricola,san joaquin,2
-san joaquin,pedrero,2
-pedrero,mirador,2
-mirador,bellavista de la florida,2
-bellavista de la florida,vicente valdes,3
-cerrillos,lo valledor,3
-lo valledor,pedro aguirre cerda,3
-pedro aguirre cerda,franklin,3
-franklin,bio bio,2
-bio bio,ñuble,4
-ñuble,estadio nacional,4
-estadio nacional,ñuñoa,2
-ñuñoa,ines de suarez,3
-ines de suarez,los leones,5
-san pablo,neptuno,2
-neptuno,pajaritos,2
-pajaritos,las rejas,2
-las rejas,ecuador,2
-ecuador,san alberto hurtado,2
-san alberto hurtado,universidad de santiago,2
-universidad de santiago,estacion central,2
-estacion central,ULA,2
-ULA,republica,2
-republica,los heroes,2
-los heroes,la moneda,2
-la moneda,universidad de chile,2
-universidad de chile,santa lucia,2
-santa lucia,universidad catolica,2
-universidad catolica,baquedano,2
-baquedano,salvador,2
-salvador,manuel montt,2
-manuel montt,pedro de valdivia,2
-pedro de valdivia,los leones,2
-los leones,tobalaba,2
-tobalaba,el golf,2
-el golf,alcantara,2
-alcantara,escuela militar,2
-escuela militar,manquehue,2
-manquehue,hernando de magallanes,2
-hernando de magallanes,los dominicos,3
-vespucio norte,zapadores,2
-zapadores,dorsal,2
-dorsal,einstein,2
-einstein,cementerios,2
-cementerios,cerro blanco,2
-cerro blanco,patronato,2
-patronato,puente cal y canto,2
-puente cal y canto,santa ana,2
-santa ana,los heroes,2
-los heroes,toesca,2
-toesca,parque ohiggins,2
-parque ohiggins,rondizzoni,2
-rondizzoni,franklin,2
-franklin,el llano,2
-el llano,san miguel,2
-san miguel,lo vial,2
-lo vial,departamental,2
-departamental,ciudad del niño,2
-ciudad del niño,lo ovalle,2
-lo ovalle,el parron,2
-el parron,la cisterna,3
-la cisterna,el bosque,2
-el bosque,observatorio,3
-observatorio,copa lo martinez,2
-copa lo martinez,hospital el pino,3
-plaza quilicura,lo cruzat,2
-lo cruzat,ferrocarril,3
-ferrocarril,los libertadores,3
-los libertadores,cardenal caro,2
-cardenal caro,vivaceta,3
-vivaceta,conchali,3
-conchali,plaza chacabuco,3
-plaza chacabuco,hospitales,3
-hospitales,puente cal y canto,3
-puente cal y canto,plaza de armas,2
-plaza de armas,universidad de chile,2
-universidad de chile,parque almagro,2
-parque almagro,matta,3
-matta,irarrazabal,3
-irarrazabal,monseñor eyzaguirre,3
-monseñor eyzaguirre,ñuñoa,2
-ñuñoa,chile españa,2
-chile españa,villa frei,3
-villa frei,plaza egaña,3
-plaza egaña,fernando castillo velasco,3
-
+origen,destino,tiempo,linea
+tobalaba,cristobal colon,2,Linea 4
+cristobal colon,francisco bilbao,2,Linea 4
+francisco bilbao,principe de gales,3,Linea 4
+principe de gales,simon bolivar,2,Linea 4
+simon bolivar,plaza egaña,2,Linea 4
+plaza egaña,los orientales,2,Linea 4
+los orientales,grecia,2,Linea 4
+grecia,los presidentes,2,Linea 4
+los presidentes,quilin,2,Linea 4
+quilin,las torres,2,Linea 4
+las torres,macul,2,Linea 4
+macul,vicuña mackenna,3,Linea 4
+vicuña mackenna,vicente valdes,2,Linea 4
+vicente valdes,rojas magallanes,2,Linea 4
+rojas magallanes,trinidad,2,Linea 4
+trinidad,san jose de la estrella,2,Linea 4
+san jose de la estrella,los quillayes,2,Linea 4
+los quillayes,elisa correa,2,Linea 4
+elisa correa,hospital sotero del rio,2,Linea 4
+hospital sotero del rio,protectora de la infancia,2,Linea 4
+protectora de la infancia,las mercedes,2,Linea 4
+las mercedes,plaza de puente alto,2,Linea 4
+vicuña mackenna,santa julia,3,Linea 4A
+santa julia,la granja,2,Linea 4A
+la granja,santa rosa,4,Linea 4A
+santa rosa,san ramon,2,Linea 4A
+san ramon,la cisterna,5,Linea 4A
+plaza de maipu,santiago bueras,2,Linea 5
+santiago bueras,del sol,2,Linea 5
+del sol,monte tabor,2,Linea 5
+monte tabor,las parcelas,2,Linea 5
+las parcelas,laguna sur,3,Linea 5
+laguna sur,barrancas,2,Linea 5
+barrancas,pudahuel,2,Linea 5
+pudahuel,san pablo,3,Linea 5
+san pablo,lo prado,2,Linea 5
+lo prado,blanqueado,2,Linea 5
+blanqueado,gruta de lourdes,2,Linea 5
+gruta de lourdes,quinta normal,2,Linea 5
+quinta normal,cumming,2,Linea 5
+cumming,santa ana,2,Linea 5
+santa ana,plaza de armas,2,Linea 5
+plaza de armas,bellas artes,2,Linea 5
+bellas artes,baquedano,3,Linea 5
+baquedano,parque bustamante,2,Linea 5
+parque bustamante,santa isabel,2,Linea 5
+santa isabel,irarrazabal,2,Linea 5
+irarrazabal,ñuble,3,Linea 5
+ñuble,rodrigo de araya,2,Linea 5
+rodrigo de araya,carlos valdovinos,2,Linea 5
+carlos valdovinos,camino agricola,2,Linea 5
+camino agricola,san joaquin,2,Linea 5
+san joaquin,pedrero,2,Linea 5
+pedrero,mirador,2,Linea 5
+mirador,bellavista de la florida,2,Linea 5
+bellavista de la florida,vicente valdes,3,Linea 5
+cerrillos,lo valledor,3,Linea 6
+lo valledor,pedro aguirre cerda,3,Linea 6
+pedro aguirre cerda,franklin,3,Linea 6
+franklin,bio bio,2,Linea 6
+bio bio,ñuble,4,Linea 6
+ñuble,estadio nacional,4,Linea 6
+estadio nacional,ñuñoa,2,Linea 6
+ñuñoa,ines de suarez,3,Linea 6
+ines de suarez,los leones,5,Linea 6
+san pablo,neptuno,2,Linea 1
+neptuno,pajaritos,2,Linea 1
+pajaritos,las rejas,2,Linea 1
+las rejas,ecuador,2,Linea 1
+ecuador,san alberto hurtado,2,Linea 1
+san alberto hurtado,universidad de santiago,2,Linea 1
+universidad de santiago,estacion central,2,Linea 1
+estacion central,ULA,2,Linea 1
+ULA,republica,2,Linea 1
+republica,los heroes,2,Linea 1
+los heroes,la moneda,2,Linea 1
+la moneda,universidad de chile,2,Linea 1
+universidad de chile,santa lucia,2,Linea 1
+santa lucia,universidad catolica,2,Linea 1
+universidad catolica,baquedano,2,Linea 1
+baquedano,salvador,2,Linea 1
+salvador,manuel montt,2,Linea 1
+manuel montt,pedro de valdivia,2,Linea 1
+pedro de valdivia,los leones,2,Linea 1
+los leones,tobalaba,2,Linea 1
+tobalaba,el golf,2,Linea 1
+el golf,alcantara,2,Linea 1
+alcantara,escuela militar,2,Linea 1
+escuela militar,manquehue,2,Linea 1
+manquehue,hernando de magallanes,2,Linea 1
+hernando de magallanes,los dominicos,3,Linea 1
+vespucio norte,zapadores,2,Linea 2
+zapadores,dorsal,2,Linea 2
+dorsal,einstein,2,Linea 2
+einstein,cementerios,2,Linea 2
+cementerios,cerro blanco,2,Linea 2
+cerro blanco,patronato,2,Linea 2
+patronato,puente cal y canto,2,Linea 2
+puente cal y canto,santa ana,2,Linea 2
+santa ana,los heroes,2,Linea 2
+los heroes,toesca,2,Linea 2
+toesca,parque ohiggins,2,Linea 2
+parque ohiggins,rondizzoni,2,Linea 2
+rondizzoni,franklin,2,Linea 2
+franklin,el llano,2,Linea 2
+el llano,san miguel,2,Linea 2
+san miguel,lo vial,2,Linea 2
+lo vial,departamental,2,Linea 2
+departamental,ciudad del niño,2,Linea 2
+ciudad del niño,lo ovalle,2,Linea 2
+lo ovalle,el parron,2,Linea 2
+el parron,la cisterna,3,Linea 2
+la cisterna,el bosque,2,Linea 2
+el bosque,observatorio,3,Linea 2
+observatorio,copa lo martinez,2,Linea 2
+copa lo martinez,hospital el pino,3,Linea 2
+plaza quilicura,lo cruzat,2,Linea 3
+lo cruzat,ferrocarril,3,Linea 3
+ferrocarril,los libertadores,3,Linea 3
+los libertadores,cardenal caro,2,Linea 3
+cardenal caro,vivaceta,3,Linea 3
+vivaceta,conchali,3,Linea 3
+conchali,plaza chacabuco,3,Linea 3
+plaza chacabuco,hospitales,3,Linea 3
+hospitales,puente cal y canto,3,Linea 3
+puente cal y canto,plaza de armas,2,Linea 3
+plaza de armas,universidad de chile,2,Linea 3
+universidad de chile,parque almagro,2,Linea 3
+parque almagro,matta,3,Linea 3
+matta,irarrazabal,3,Linea 3
+irarrazabal,monseñor eyzaguirre,3,Linea 3
+monseñor eyzaguirre,ñuñoa,2,Linea 3
+ñuñoa,chile españa,2,Linea 3
+chile españa,villa frei,3,Linea 3
+villa frei,plaza egaña,3,Linea 3
+plaza egaña,fernando castillo velasco,3,Linea 3
