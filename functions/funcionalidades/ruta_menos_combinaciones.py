@@ -12,7 +12,10 @@ def obtener_combinaciones(G):
             lineas_conectadas.add(G[nodo][vecino]['linea'])
         if len(lineas_conectadas) > 1:
             combinaciones.add(nodo)
+    
+    #retorna un array de 1 dimension con las estaciones que pertenezcan a mas de una linea
     return combinaciones
+
 
 
 def bfs_menor_transbordo(G, origen, destino):

@@ -25,21 +25,24 @@ from functions.funcionalidades.ruta_menos_combinaciones import obtener_combinaci
 #crea el grafo g con todas las lienas de metro y sus pesos
 G = grafo_metro()
 
-
-#indica un inicio y destino (despues esto debe ser cambiado al archivo inicio_destino)
-
-#ruta mas corta entre origen y destino
-#print("La ruta mas corta es:",dijkstra(G, origen, destino))
-graficar_grafos(G, False)
+    
 
 
+
+
+'''
 #Ruta menos transbordos
 if __name__ == "__main__":
     G = grafo_metro()
+    
+    #parece que esto no se usa
     combinaciones = obtener_combinaciones(G)
+    
     origen = "hospitales"
     destino = "la granja"
+    
     camino, transbordos, estaciones_transbordo = bfs_menor_transbordo(G, origen, destino)
+    
     if camino:
         print(f"La ruta con menor cantidad de transbordos entre {origen} y {destino} es:")
         print(" -> ".join(camino))
@@ -50,3 +53,4 @@ if __name__ == "__main__":
             print("No se realizaron transbordos.")
     else:
         print("No se encontró una ruta.")
+'''
