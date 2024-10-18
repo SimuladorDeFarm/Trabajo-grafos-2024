@@ -40,14 +40,14 @@ def input_usuario():
         valido = True
         while valido:
             #hora_string = "15:534"
-            hora_string = input("Programar Hora:")
+            hora_string = input("Programar Hora[formato HH:MM ej: 12:50]:")
             origen = input("ingrese origen: ")
             destino = input("ingrese destino: ")
             
             
             if(validar_hora(hora_string) and validar_estacion(origen, lista) and validar_estacion(destino, lista)):
                 valido = False
-                print("Hora ingresada o estaciones SI es valida")
+                #print("Hora ingresada o estaciones SI es valida")
             else:
                 valido = True
                 print("Hora ingresada o estaciones NO es valida")

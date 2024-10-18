@@ -21,32 +21,24 @@ from functions.frontend.inicio_destino                  import input_usuario
 from functions.funcionalidades.ruta_menos_combinaciones import bfs_menor_transbordo
 from functions.funcionalidades.ruta_menos_combinaciones import obtener_combinaciones
 
+#calucula el tiempo entre dos estaciones
+from functions.algoritmos.calcular_tiempo               import calcular_tiempo, hora_actual, conversion_int_to_timedelta, sumar_minutos, proceso_calcular_hora_llegada
+
 from datetime import datetime
+
+
 #crea el grafo g con todas las lienas de metro y sus pesos
 G = grafo_metro()
 
     
 origen, destino, hora = input_usuario()
-
-ruta_corta = dijkstra(G, origen, destino)
-print(ruta_corta)
-#parece que esto no se usa
-combinaciones = obtener_combinaciones(G)
+hora_llegada, tiempo_recorrido = proceso_calcular_hora_llegada(G, origen, destino, hora)
+ruta = dijkstra(G, origen, destino)
 
 
-
-camino, transbordos, estaciones_transbordo = bfs_menor_transbordo(G, origen, destino)
-
-if camino:
-    print(f"La ruta con menor cantidad de transbordos entre {origen} y {destino} es:")
-    print(" -> ".join(camino))
-    print(f"Número total de transbordos realizados: {transbordos}")
-    if estaciones_transbordo:
-        print(f"Transbordos realizados en las siguientes estaciones: {', '.join(estaciones_transbordo)}")
-    else:
-        print("No se realizaron transbordos.")
-else:
-    print("No se encontró una ruta.")
+print("hora de llegada: ", hora_llegada.time())
+print( "tiempo estimado de viaje",tiempo_recorrido)
+print("ruta de viaje: ", ruta)
 
 
 '''
