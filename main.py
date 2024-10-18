@@ -24,6 +24,9 @@ from functions.funcionalidades.ruta_menos_combinaciones import obtener_combinaci
 #calucula el tiempo entre dos estaciones
 from functions.algoritmos.calcular_tiempo               import calcular_tiempo, hora_actual, conversion_int_to_timedelta, sumar_minutos, proceso_calcular_hora_llegada
 
+#imprimir resultados finales
+from functions.frontend.imprimir_resultados import imprimir_ruta_menos_transbordos, imprimir_ruta_corta
+
 from datetime import datetime
 
 
@@ -36,32 +39,16 @@ hora_llegada, tiempo_recorrido = proceso_calcular_hora_llegada(G, origen, destin
 ruta = dijkstra(G, origen, destino)
 
 
-print("hora de llegada: ", hora_llegada.time())
-print( "tiempo estimado de viaje",tiempo_recorrido)
-print("ruta de viaje: ", ruta)
+imprimir_ruta_corta(ruta, hora_llegada, tiempo_recorrido)
 
 
-'''
+
 #Ruta menos transbordos
-if __name__ == "__main__":
-    G = grafo_metro()
-    
-    #parece que esto no se usa
-    combinaciones = obtener_combinaciones(G)
-    
-    origen = "hospitales"
-    destino = "la granja"
-    
-    camino, transbordos, estaciones_transbordo = bfs_menor_transbordo(G, origen, destino)
-    
-    if camino:
-        print(f"La ruta con menor cantidad de transbordos entre {origen} y {destino} es:")
-        print(" -> ".join(camino))
-        print(f"Número total de transbordos realizados: {transbordos}")
-        if estaciones_transbordo:
-            print(f"Transbordos realizados en las siguientes estaciones: {', '.join(estaciones_transbordo)}")
-        else:
-            print("No se realizaron transbordos.")
-    else:
-        print("No se encontró una ruta.")
-'''
+
+
+#parece que esto no se usa
+combinaciones = obtener_combinaciones(G)
+
+camino, transbordos, estaciones_transbordo = bfs_menor_transbordo(G, origen, destino)
+
+imprimir_ruta_menos_transbordos(origen, destino, camino, transbordos, estaciones_transbordo  )
