@@ -24,8 +24,8 @@ G = grafo_metro()
 
 
 #indica un inicio y destino (despues esto debe ser cambiado al archivo inicio_destino)
-origen = "plaza de puente alto"
-destino = "tobalaba"
+origen = "plaza de maipu"
+destino = "hospitales"
 
 #ruta mas corta entre origen y destino
 #print("La ruta mas corta es:",dijkstra(G, origen, destino))
@@ -34,11 +34,9 @@ graficar_grafos(G, False)
 
 #Ruta menos transbordos
 if __name__ == "__main__":
-    G = grafo_metro()
     combinaciones = obtener_combinaciones(G)
-    origen = "hospitales"
-    destino = "la granja"
-    camino, transbordos, estaciones_transbordo = bfs_menor_transbordo(G, origen, destino)
+    # Buscar ruta con menor cantidad de transbordos
+    camino, transbordos, estaciones_transbordo, tiempo_total = bfs_menor_transbordo(G, origen, destino)
     if camino:
         print(f"La ruta con menor cantidad de transbordos entre {origen} y {destino} es:")
         print(" -> ".join(camino))
@@ -47,5 +45,6 @@ if __name__ == "__main__":
             print(f"Transbordos realizados en las siguientes estaciones: {', '.join(estaciones_transbordo)}")
         else:
             print("No se realizaron transbordos.")
+        print(f"Tiempo total del viaje: {tiempo_total} unidades de tiempo")
     else:
         print("No se encontró una ruta.")
