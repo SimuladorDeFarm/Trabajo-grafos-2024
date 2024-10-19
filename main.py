@@ -27,6 +27,9 @@ from functions.algoritmos.calcular_tiempo               import calcular_tiempo, 
 #imprimir resultados finales
 from functions.frontend.imprimir_resultados import imprimir_ruta_menos_transbordos, imprimir_ruta_corta
 
+#limpiar pantalla
+from functions.Os.funcionalidades_Os                               import    limpiar_pantalla
+
 from datetime import datetime
 
 
@@ -35,11 +38,15 @@ G = grafo_metro()
 
     
 origen, destino, hora = input_usuario()
+
+limpiar_pantalla()
+
+
 hora_llegada, tiempo_recorrido = proceso_calcular_hora_llegada(G, origen, destino, hora)
 ruta = dijkstra(G, origen, destino)
 
 
-imprimir_ruta_corta(ruta, hora_llegada, tiempo_recorrido)
+imprimir_ruta_corta(ruta, hora_llegada, tiempo_recorrido, origen, destino)
 
 
 
@@ -51,4 +58,6 @@ combinaciones = obtener_combinaciones(G)
 
 camino, transbordos, estaciones_transbordo = bfs_menor_transbordo(G, origen, destino)
 
-imprimir_ruta_menos_transbordos(origen, destino, camino, transbordos, estaciones_transbordo  )
+
+
+imprimir_ruta_menos_transbordos(origen, destino, camino, transbordos, estaciones_transbordo)
