@@ -30,6 +30,8 @@ def bfs_menor_transbordo(G, origen, destino):
 
         # Si la estación actual es igual al destino, retornamos los siguientes parámetros
         if estacion_actual == destino:
+            #camino, transbordos y estaciones_transbordos son arrays con strings
+            #tiempo_recorido_transborods es de tipo entero
             return camino, transbordos, estaciones_transbordo, tiempo_acumulado
 
         # Aquí registramos las estaciones que ya visitamos (con su línea) para no revisitarlas

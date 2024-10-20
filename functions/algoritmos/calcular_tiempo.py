@@ -58,3 +58,17 @@ def proceso_calcular_hora_llegada(G, origen, destino, hora):
     hora_llegada = sumar_minutos(hora_como_datetime, tiempo_delta)
 
     return hora_llegada, tiempo_delta
+
+#hora es del timpo time y tiempo es del tipo int
+def proceso_calcular_hora_llegada_transbordos(hora, tiempo):
+
+    #transforma de int a timedelta
+    tiempo_delta = conversion_int_to_timedelta(tiempo)
+
+    #cnvierte hora (type = time) a timedelta
+    hora_como_datetime = datetime.combine(datetime.today(), hora)
+    
+    #calcula hora de llegada segun la hora recivida y el tiempo de al ruta
+    hora_llegada = sumar_minutos(hora_como_datetime, tiempo_delta)
+
+    return hora_llegada, tiempo_delta
