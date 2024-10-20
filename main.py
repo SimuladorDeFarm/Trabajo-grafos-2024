@@ -27,61 +27,51 @@ from functions.algoritmos.calcular_tiempo               import calcular_tiempo, 
 #imprimir resultados finales
 from functions.frontend.imprimir_resultados import imprimir_ruta_menos_transbordos, imprimir_ruta_corta
 
+from functions.frontend.lista_estaciones_metro      import estacion_linea
+
+
 #limpiar pantalla
 from functions.Os.funcionalidades_Os                               import    limpiar_pantalla
 
 from datetime import datetime
 
 
-#crea el grafo g con todas las lienas de metro y sus pesos
-G = grafo_metro()
+def  menu():
+        #crea el grafo g con todas las lienas de metro y sus pesos
+    G = grafo_metro()
 
-#obtiene el origen, destino y hora programa (o actual) del ususario 
-origen, destino, hora = input_usuario()
+    #obtiene el origen, destino y hora programa (o actual) del ususario 
+    origen, destino, hora = input_usuario()
 
-#limpia la pantalla para mostrar los resultados
-limpiar_pantalla()
+    #limpia la pantalla para mostrar los resultados
+    limpiar_pantalla()
 
-#Calculla la hora de llegada 
-hora_llegada, tiempo_recorrido = proceso_calcular_hora_llegada(G, origen, destino, hora)
+    #Calculla la hora de llegada 
+    hora_llegada, tiempo_recorrido = proceso_calcular_hora_llegada(G, origen, destino, hora)
 
-#calcula la ruta mas corta
-ruta = dijkstra(G, origen, destino)
+    #calcula la ruta mas corta
+    ruta = dijkstra(G, origen, destino)
 
-#imprime los resultados de la ruta corta
-imprimir_ruta_corta(ruta, hora_llegada, tiempo_recorrido, origen, destino)
-
-
-
-#Ruta menos transbordos
+    #imprime los resultados de la ruta corta
+    imprimir_ruta_corta(ruta, hora_llegada, tiempo_recorrido, origen, destino, hora)
 
 
-#parece que esto no se usa
-combinaciones = obtener_combinaciones(G)
 
-#cacula la ruta con menos transbordos
-#camani, transbordos y estaciones_transbordos son arrays con strings
-#tiempo_recorido_transborods es de tipo entero
-camino, transbordos, estaciones_transbordo, tiempo_recorrido_transbordos = bfs_menor_transbordo(G, origen, destino)
+    #Ruta menos transbordos
 
-hora_llegada_transbordos, tiempo_recorrido_transbordos = proceso_calcular_hora_llegada_transbordos(hora, tiempo_recorrido_transbordos)
 
-imprimir_ruta_menos_transbordos(origen, destino, camino, transbordos, estaciones_transbordo, tiempo_recorrido_transbordos, hora_llegada_transbordos)
-
-'''
-if __name__ == "__main__":
+    #parece que esto no se usa
     combinaciones = obtener_combinaciones(G)
-    # Buscar ruta con menor cantidad de transbordos
-    camino, transbordos, estaciones_transbordo, tiempo_total = bfs_menor_transbordo(G, origen, destino)
-    if camino:
-        print(f"La ruta con menor cantidad de transbordos entre {origen} y {destino} es:")
-        print(" -> ".join(camino))
-        print(f"Número total de transbordos realizados: {transbordos}")
-        if estaciones_transbordo:
-            print(f"Transbordos realizados en las siguientes estaciones: {', '.join(estaciones_transbordo)}")
-        else:
-            print("No se realizaron transbordos.")
-        print(f"Tiempo total del viaje: {tiempo_total} unidades de tiempo")
-    else:
-        print("No se encontró una ruta.")
-'''
+
+    #cacula la ruta con menos transbordos
+    #camani, transbordos y estaciones_transbordos son arrays con strings
+    #tiempo_recorido_transborods es de tipo entero
+    camino, transbordos, estaciones_transbordo, tiempo_recorrido_transbordos = bfs_menor_transbordo(G, origen, destino)
+
+    hora_llegada_transbordos, tiempo_recorrido_transbordos = proceso_calcular_hora_llegada_transbordos(hora, tiempo_recorrido_transbordos)
+
+    imprimir_ruta_menos_transbordos(origen, destino, camino, transbordos, estaciones_transbordo, tiempo_recorrido_transbordos, hora_llegada_transbordos, hora)
+
+    
+
+menu()
