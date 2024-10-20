@@ -7,10 +7,11 @@ def imprimir_tabulate(ruta):
     print(tabulate(tabla, headers=["Paso", "Línea de Metro"]))
 
 
-def imprimir_ruta_menos_transbordos(origen , destino, camino, transbordos, estaciones_transbordo ):
+def imprimir_ruta_menos_transbordos(origen , destino, camino, transbordos, estaciones_transbordo, tiempo_recorrido ):
 
     if camino:
         print(f"La ruta con menor cantidad de transbordos entre {origen} y {destino} es:")
+        print( "Tiempo estimado de viaje[Hrs:Min:Seg]: ",tiempo_recorrido)
         imprimir_tabulate(camino)
         #print(" -> ".join(camino))
         print(f"Número total de transbordos realizados: {transbordos}")

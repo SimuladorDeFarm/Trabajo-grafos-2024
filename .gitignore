@@ -1,2 +1,12 @@
+<<<<<<< HEAD
+# Ignorar archivos de configuración local
+.env
+# Ignorar archivos de log
+*.log
+# Ignorar archivos temporales
+*.tmp
+# Ignorar dependencias de node_modules
+node_modules/
+=======
 /env
-exit    
+>>>>>>> ae81af5ffc91704a32565a7b57ad8a195fa60f60

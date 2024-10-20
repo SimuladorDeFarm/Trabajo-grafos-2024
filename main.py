@@ -56,8 +56,26 @@ imprimir_ruta_corta(ruta, hora_llegada, tiempo_recorrido, origen, destino)
 #parece que esto no se usa
 combinaciones = obtener_combinaciones(G)
 
-camino, transbordos, estaciones_transbordo = bfs_menor_transbordo(G, origen, destino)
+camino, transbordos, estaciones_transbordo, tiempo_recorrido_transbordos = bfs_menor_transbordo(G, origen, destino)
 
 
 
-imprimir_ruta_menos_transbordos(origen, destino, camino, transbordos, estaciones_transbordo)
+imprimir_ruta_menos_transbordos(origen, destino, camino, transbordos, estaciones_transbordo, tiempo_recorrido_transbordos)
+
+'''
+if __name__ == "__main__":
+    combinaciones = obtener_combinaciones(G)
+    # Buscar ruta con menor cantidad de transbordos
+    camino, transbordos, estaciones_transbordo, tiempo_total = bfs_menor_transbordo(G, origen, destino)
+    if camino:
+        print(f"La ruta con menor cantidad de transbordos entre {origen} y {destino} es:")
+        print(" -> ".join(camino))
+        print(f"Número total de transbordos realizados: {transbordos}")
+        if estaciones_transbordo:
+            print(f"Transbordos realizados en las siguientes estaciones: {', '.join(estaciones_transbordo)}")
+        else:
+            print("No se realizaron transbordos.")
+        print(f"Tiempo total del viaje: {tiempo_total} unidades de tiempo")
+    else:
+        print("No se encontró una ruta.")
+'''
