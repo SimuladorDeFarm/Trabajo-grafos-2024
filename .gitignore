@@ -1,11 +1,2 @@
 # Ignorar archivos de configuración local
-.env
-# Ignorar archivos de log
-*.log
-# Ignorar archivos temporales
-*.tmp
-# Ignorar dependencias de node_modules
-node_modules/
 /env
-*.pyc
-__pycache__/
