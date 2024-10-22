@@ -23,6 +23,7 @@ def eliminar_repetidos(lista):
 
 def imprimir_tabulate(ruta, v):
 
+    #soluciona error de estaciones repetidas
     ruta = eliminar_repetidos(ruta)
 
     # Crear una tabla con las líneas de metro
