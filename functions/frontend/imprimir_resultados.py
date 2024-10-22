@@ -4,7 +4,27 @@ from functions.base_datos.combinaciones import combinaciones
 #imprime la ruta que hay que tomar, esta contenida en el el array 1dimension ruta
 #v es un vector que contiene las convinaciones del metro para que cuando
 #se haga una convinacion se imrpima en que estacion convinar pero la funcion fue eliminada por problemas con la rtua de menor duracion 
+
+def eliminar_repetidos(lista):
+    seen = set()  # Para rastrear elementos que ya hemos visto
+    resultado = []  # Lista resultado sin el segundo repetido
+
+    for elemento in lista:
+        if elemento not in seen:
+            seen.add(elemento)
+            resultado.append(elemento)
+        elif lista.count(elemento) > 1:
+            # Si ya apareció una vez, no lo agregamos
+            seen.add(elemento)
+    return resultado
+
+
+
+
 def imprimir_tabulate(ruta, v):
+
+    ruta = eliminar_repetidos(ruta)
+
     # Crear una tabla con las líneas de metro
     tabla = [[i+1, linea] for i, linea in enumerate(ruta)]
     
@@ -67,7 +87,7 @@ def imprimir_ruta_menos_transbordos(origen , destino, camino, transbordos, estac
         print( "Tiempo estimado de viaje[Hrs:Min:Seg]: ",tiempo_recorrido)
         print("Hora de salida[Hrs:Min:Seg]: ", hora_salida)
         print("Hora de llegada[Hrs:Min:Seg]: ", hora_llegada.time())
-        imprimir_tabulate(camino, estaciones_transbordo)
+        imprimir_tabulate(camino, v)
         #print(" -> ".join(camino))
         print(f"Número total de transbordos realizados: {transbordos}")
         if estaciones_transbordo:
