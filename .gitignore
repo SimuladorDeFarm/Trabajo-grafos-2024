@@ -7,5 +7,5 @@
 # Ignorar dependencias de node_modules
 node_modules/
 /env
-*.pyc
-__pycache__/
+__pycache__
+/env

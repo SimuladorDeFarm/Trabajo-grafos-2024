@@ -19,7 +19,7 @@ from functions.base_datos.combinaciones                 import combinaciones
 from functions.frontend.inicio_destino                  import input_usuario
 
 from functions.funcionalidades.ruta_menos_combinaciones import bfs_menor_transbordo
-from functions.funcionalidades.ruta_menos_combinaciones import obtener_combinaciones
+
 
 #calucula el tiempo entre dos estaciones
 from functions.algoritmos.calcular_tiempo               import calcular_tiempo, hora_actual, conversion_int_to_timedelta, sumar_minutos, proceso_calcular_hora_llegada, proceso_calcular_hora_llegada_transbordos
@@ -58,10 +58,6 @@ def  menu():
 
 
     #Ruta menos transbordos
-
-
-    #parece que esto no se usa
-    combinaciones = obtener_combinaciones(G)
 
     #cacula la ruta con menos transbordos
     #camani, transbordos y estaciones_transbordos son arrays con strings
