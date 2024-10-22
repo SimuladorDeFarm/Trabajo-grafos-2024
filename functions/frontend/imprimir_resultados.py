@@ -7,17 +7,22 @@ from functions.base_datos.combinaciones import combinaciones
 
 def eliminar_repetidos(lista):
     seen = set()  # Para rastrear elementos que ya hemos visto
-    resultado = []  # Lista resultado sin el segundo repetido
+    resultado = []  # Lista resultado sin repetidos
+    i = 0  # Para llevar un control del índice
 
-    for elemento in lista:
+    while i < len(lista):
+        elemento = lista[i]
+        
         if elemento not in seen:
             seen.add(elemento)
             resultado.append(elemento)
-        elif lista.count(elemento) > 1:
-            # Si ya apareció una vez, no lo agregamos
-            seen.add(elemento)
+            i += 1
+        else:
+            # Si el elemento ya ha aparecido antes, eliminamos el actual y el anterior
+            if len(resultado) > 0:  # Evitar índices negativos
+                resultado.pop()  # Elimina el anterior (i-1)
+            i += 1  # Avanza el índice, pero no añade este elemento repetido
     return resultado
-
 
 
 
