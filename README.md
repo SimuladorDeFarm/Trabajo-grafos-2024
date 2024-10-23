@@ -8,7 +8,7 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 
 librerias necesarias
 
-networkx
+  - [networkx][https://networkx.org/documentation/stable/install.html]
 pandas
 matplotlib
 tabulate
