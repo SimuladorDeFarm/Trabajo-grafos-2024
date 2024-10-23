@@ -6,7 +6,10 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 
 # Instalacion 
 
-librerias necesarias
+### Lenguaje
+- [python](https://www.python.org/)
+
+### librerias necesarias
 
   - [networkx](https://networkx.org/documentation/stable/install.html)
   - [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
