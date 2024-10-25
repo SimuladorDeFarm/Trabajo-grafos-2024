@@ -6,8 +6,22 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 
 # Instalacion 
 
-### Lenguaje
+## Requisitos
+
 - [python](https://www.python.org/)
+- pip
+
+### Linux
+
+```bash
+$ cd Trabajo-grafos-2024
+$ chmod +x install_linux.sh
+$ ./install_linux.sh
+
+```
+
+
+
 
 ### librerias necesarias
 
@@ -15,3 +29,4 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
   - [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
   - [matplotlib](https://matplotlib.org/stable/users/getting_started/)
   - [tabulate](https://pypi.org/project/tabulate/)
+
