@@ -15,8 +15,8 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 
 ```bash
 $ cd Trabajo-grafos-2024
-$ chmod +x install_linux.sh
-$ ./install_linux.sh
+$ chmod +x install_linux_script.sh
+$ ./install_linux_script.sh
 
 ```
 
