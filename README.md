@@ -23,7 +23,7 @@ $ ./install_linux_script.sh
 
 
 
-### librerias necesarias
+### librerias usadas (se instalan automaticamente)
 
   - [networkx](https://networkx.org/documentation/stable/install.html)
   - [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
