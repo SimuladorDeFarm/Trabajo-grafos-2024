@@ -11,16 +11,31 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 - [python](https://www.python.org/)
 - pip
 
-### Linux
+
+## Linux
 
 ```bash
+$ git clone https://github.com/SimuladorDeFarm/Trabajo-grafos-2024.git
 $ cd Trabajo-grafos-2024
 $ chmod +x install_linux_script.sh
 $ ./install_linux_script.sh
 
 ```
+# Ejecucion
 
+## Linux
 
+### Entorno Virtual
+
+```bash
+#activar entorno virtual
+$ source env/bin/activate
+$ python main.py
+```
+### Sin entorno virtual
+```bash
+$ python main.py
+```
 
 
 ### librerias usadas (se instalan automaticamente)
