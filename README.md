@@ -86,6 +86,6 @@ El programa necesita que el usuario ingrese los siguientes campos, con esos dato
 
 # Creadores
 
-[SimuladorDeFarm](https://github.com/SimuladorDeFarm)
-[NeoManD10](https://github.com/NeoManD10)
-[Ari-utem](https://github.com/Ari-utem)
+- [SimuladorDeFarm](https://github.com/SimuladorDeFarm)
+- [NeoManD10](https://github.com/NeoManD10)
+- [Ari-utem](https://github.com/Ari-utem)
