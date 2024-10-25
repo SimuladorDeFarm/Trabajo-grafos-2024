@@ -84,3 +84,8 @@ El programa necesita que el usuario ingrese los siguientes campos, con esos dato
  ## Screenshot
 ![imagen](https://github.com/user-attachments/assets/f4915ab7-74d9-49cc-a4a1-937356625427)
 
+# Creadores
+
+[SimuladorDeFarm](https://github.com/SimuladorDeFarm)
+[NeoManD10](https://github.com/NeoManD10)
+[Ari-utem](https://github.com/Ari-utem)
