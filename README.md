@@ -32,12 +32,13 @@ $ source env/bin/activate
 $ python main.py
 ```
 ### Sin entorno virtual
+Deberas instalar las librerias listadas mas abajo
 ```bash
 $ python main.py
 ```
 
 
-### librerias usadas (se instalan automaticamente)
+### librerias usadas (se instalan automaticamente en entorno virtual)
 
   - [networkx](https://networkx.org/documentation/stable/install.html)
   - [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
