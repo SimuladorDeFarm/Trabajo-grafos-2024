@@ -5,9 +5,9 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 # Indice
 - [Instalacion](#Instalacion)
 - [Ejecucion](#Ejecucion)
-- [Como usar](#Como)
-- [Screenshots](#Screnshots)
-- 
+- [Como usar](#Como usar)
+- [Screenshots](#Screenshots)
+  
 # Instalacion 
 
 ## Requisitos
@@ -114,7 +114,7 @@ El programa necesita que el usuario ingrese los siguientes campos, con esos dato
 
     
  
- ## Screenshot
+ ## Screenshots
 ![imagen](https://github.com/user-attachments/assets/f4915ab7-74d9-49cc-a4a1-937356625427)
 
 # Creadores
