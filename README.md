@@ -20,7 +20,17 @@ $ chmod +x install_linux_script.sh
 $ ./install_linux_script.sh
 
 ```
+## Windows
+
+```bach
+$ git clone https://github.com/SimuladorDeFarm/Trabajo-grafos-2024.git
+$ cd Trabajo-grafos-2024
+$ ./install_windows_script.bat
+```
+
 # Ejecucion
+
+Hay dos formas de ejecutar el script, usando entorno virutal (buena practica) y sin entorno virtual, en el caso de no usar entorno virtual deberas instalar manualmente las librerias listadas mas abajo en tu propia maquina
 
 ## Linux
 
@@ -30,11 +40,23 @@ $ ./install_linux_script.sh
 #activar entorno virtual
 $ source env/bin/activate
 $ python main.py
+#para dejar de ejecutar entorno vitual
+deactivate
 ```
 ### Sin entorno virtual
 Deberas instalar las librerias listadas mas abajo
 ```bash
 $ python main.py
+```
+## Windows
+
+### Entorno virtual
+```cmd
+#Activa entorno virual
+$ call env\Scripts\activate
+$ python main.py
+#desacivar entorno virtual
+deactivate
 ```
 
 
