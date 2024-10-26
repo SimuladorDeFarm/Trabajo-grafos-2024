@@ -5,7 +5,7 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 # Indice
 - [Instalacion](#Instalacion)
 - [Ejecucion](#Ejecucion)
-- [Como usar](#Como usar)
+- [Como usar](#Instrucciones)
 - [Screenshots](#Screenshots)
   
 # Instalacion 
@@ -79,7 +79,7 @@ $ python main.py
   - [tabulate](https://pypi.org/project/tabulate/)
 
 
-# Como usar
+# Instrucciones
 
 ## inputs
 
