@@ -2,7 +2,12 @@
 
 Script de python que encuentra la ruta mas corta entre dos estaciones del metro de santiago y la ruta con menos transbordos. Da como resultado la ruta en cuestion, la hora de salida (hora actual como programable), hora de llegada y tiempo de viaje. 
 
-
+# Indice
+- [Instalacion](#Instalacion)
+- [Ejecucion](#Ejecucion)
+- [Como usar](#Como)
+- [Screenshots](#Screnshots)
+- 
 # Instalacion 
 
 ## Requisitos
