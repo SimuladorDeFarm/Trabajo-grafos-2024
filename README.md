@@ -22,11 +22,12 @@ $ ./install_linux_script.sh
 ```
 ## Windows
 
-```bach
+```cmd
 $ git clone https://github.com/SimuladorDeFarm/Trabajo-grafos-2024.git
 $ cd Trabajo-grafos-2024
 $ ./install_windows_script.bat
 ```
+O tambien puedes dirigirte a la ruta donde hayas clonado el repositorio y darle doble click al archivo `install_windows_script.bat`
 
 # Ejecucion
 
@@ -58,7 +59,12 @@ $ python main.py
 #desacivar entorno virtual
 deactivate
 ```
+### Sin entorno virtual
 
+instala librerias manualmente
+```cmd
+$ python main.py
+```
 
 ### librerias usadas (se instalan automaticamente en entorno virtual)
 
