@@ -1,16 +1,16 @@
-# Aplicacion teoria de grafos
+# Graph Theory Application
 
-Script de python que encuentra la ruta mas corta entre dos estaciones del metro de santiago y la ruta con menos transbordos. Da como resultado la ruta en cuestion, la hora de salida (hora actual como programable), hora de llegada y tiempo de viaje. 
+Python script that find the quickest rute and rute whit least transfer between two subway station.  The program gives us two rutes, departure time(current hour or programmed) , arrive time and travel time.
 
-# Indice
-- [Instalacion](#Instalacion)
-- [Ejecucion](#Ejecucion)
+# Index
+- [Installation](#Installation)
+- [Execution](#Execution)
 - [Como usar](#Instrucciones)
 - [Screenshots](#Screenshots)
   
-# Instalacion 
+# Installation 
 
-## Requisitos
+## Requirements
 
 - [python](https://www.python.org/)
 - pip
@@ -18,25 +18,29 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 
 ## Linux
 
+Clone the repositoy and execute the script `install_linux_script.sh`.
 ```bash
 $ git clone https://github.com/SimuladorDeFarm/Trabajo-grafos-2024.git
 $ cd Trabajo-grafos-2024
+#change permissions
 $ chmod +x install_linux_script.sh
 $ ./install_linux_script.sh
 
 ```
 ## Windows
 
+Clone the repositoy and execute the script `install_windows_script.bat`.
 ```cmd
 $ git clone https://github.com/SimuladorDeFarm/Trabajo-grafos-2024.git
 $ cd Trabajo-grafos-2024
 $ install_windows_script.bat
 ```
-O tambien puedes dirigirte a la ruta donde hayas clonado el repositorio y darle doble click al archivo `install_windows_script.bat`
+Or you can also go to the path where you have cloned the repository and double-click in the file `install_windows_script.bat` 
 
-# Ejecucion
 
-Hay dos formas de ejecutar el script, usando entorno virutal (buena practica) y sin entorno virtual, en el caso de no usar entorno virtual deberas instalar manualmente las librerias listadas mas abajo en tu propia maquina
+# Execution
+
+There are two ways to execute this script: using a virtual environment (good practice) and without a virtual environment. If you choose not to use a virtual environment, you will need to manually install the libraries listed below on your own machine.
 
 ## Linux
 
