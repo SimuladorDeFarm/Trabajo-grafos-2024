@@ -5,9 +5,9 @@ Python script that find the quickest rute and rute whit least transfer between t
 # Index
 - [Installation](#Installation)
 - [Execution](#Execution)
-- [Como usar](#Instrucciones)
+- [Como usar](#Instructions)
 - [Screenshots](#Screenshots)
-  
+- [Creators](#Creators)  
 # Installation 
 
 ## Requirements
@@ -44,7 +44,7 @@ There are two ways to execute this script: using a virtual environment (good pra
 
 ## Linux
 
-### Entorno Virtual
+### Virtual Enviroment 
 
 ```bash
 #activar entorno virtual
@@ -53,14 +53,15 @@ $ python main.py
 #para dejar de ejecutar entorno vitual
 deactivate
 ```
-### Sin entorno virtual
-Deberas instalar las librerias listadas mas abajo
+### Without Virtual Enviroment
+
+Install the libraries listed bellow
 ```bash
 $ python main.py
 ```
 ## Windows
 
-### Entorno virtual
+### Virtual Enviroment
 ```cmd
 #Activa entorno virual
 $ call env\Scripts\activate
@@ -68,14 +69,14 @@ $ python main.py
 #desacivar entorno virtual
 deactivate
 ```
-### Sin entorno virtual
+### without  Virtual Enviroment
 
-instala librerias manualmente
+Install the libraries listed bellow
 ```cmd
 $ python main.py
 ```
 
-### librerias usadas (se instalan automaticamente en entorno virtual)
+### libraries used 
 
   - [networkx](https://networkx.org/documentation/stable/install.html)
   - [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
@@ -83,34 +84,34 @@ $ python main.py
   - [tabulate](https://pypi.org/project/tabulate/)
 
 
-# Instrucciones
+# Instructions
 
-## inputs
+To obtain de quickest rute and the route with the least transfers you need put departure time, origin and destination
 
-El programa necesita que el usuario ingrese los siguientes campos, con esos datos da como resultado la ruta mas corta y la ruta con menos transbordos.
+  
 
-  1) Elegir entre usar hora actual para calcular la hora de llegada o programar la hora de salida
-     Desea programar hora?[si/no]: 
+  1) Choouse between the current time or programming time:
+    `Desea programar hora?[si/no]:` 
 
-  si: Ingresar hora en formato hh:mm
+  si: Get into time in format hh:mm :
     Programar Hora[formato HH:MM ej: 12:50]:
 
-  no: Se usa hora actual de la maquina.
+  no: use current time.
 
-  2) Ingresar el origen y el destino, Ej:
+  2) Get into origin and destiny, Ej:
   ingrese origen: tobalaba
   ingrese destino: macul
 
-  4) Resultados
+  4) Result
 
-  Ruta mas corta: ruta mas rapida entre dos estaciones
+  quickest rute: 
   
   Tiempo estimado de viaje[Hrs:Min:Seg]
   Hora de salida[Hrs:Min:Seg]
   Hora de llegada[Hrs:Min:Seg]
 
 
-  Ruta con menos convinaciones: ruta mas rapida entre dos estaciones
+  rute whith least transfers: 
   
   Tiempo estimado de viaje[Hrs:Min:Seg]
   Hora de salida[Hrs:Min:Seg]
@@ -121,7 +122,7 @@ El programa necesita que el usuario ingrese los siguientes campos, con esos dato
  ## Screenshots
 ![imagen](https://github.com/user-attachments/assets/f4915ab7-74d9-49cc-a4a1-937356625427)
 
-# Creadores
+# Creators
 
 - [SimuladorDeFarm](https://github.com/SimuladorDeFarm)
 - [NeoManD10](https://github.com/NeoManD10)
