@@ -15,7 +15,7 @@ Python script that find the quickest rute and rute whit least transfer between t
 - [git](https://git-scm.com/downloads)
 - [python](https://www.python.org/)
   (python is also in microsoft store)
-- pip
+- pip (comes whit python)
 
 
 ## Linux
