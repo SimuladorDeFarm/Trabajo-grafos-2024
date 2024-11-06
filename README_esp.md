@@ -12,9 +12,10 @@ Script de python que encuentra la ruta mas corta entre dos estaciones del metro 
 
 ## Requisitos
 
+- [git](https://git-scm.com/downloads)
 - [python](https://www.python.org/)
-- pip
-
+  (python is also in microsoft store)
+- pip (comes whit python)
 
 ## Linux
 
